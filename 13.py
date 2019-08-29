@@ -41,4 +41,3 @@ userJson = getUsers()
 a = findUser('Glenna Reichert', userJson)
 
 print(a)
-
