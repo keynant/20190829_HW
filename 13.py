@@ -5,7 +5,7 @@ import json
 class User:
     def __init__(self, d):
         self.__dict__ = d
-        self.__dict__['address'] = Address(self.__dict__['address'])
+        self.address = Address(self.address)
 
     def __str__(self):
         result = ""
@@ -40,4 +40,4 @@ def findUser(nameToCheck, userList):
 userJson = getUsers()
 a = findUser('Glenna Reichert', userJson)
 
-print(a)
+print(a.address.city)
